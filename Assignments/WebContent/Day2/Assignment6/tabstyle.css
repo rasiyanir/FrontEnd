@@ -1,0 +1,28 @@
+@charset "ISO-8859-1";
+
+
+
+h2{
+	color: maroon;
+	text-align: center;
+}
+
+table{
+	margin-left: 30%;
+}
+
+table, th, td {
+	border: 2px solid black;
+}
+
+th{
+	background-color: pink;
+}
+
+.odd{
+	background-color: lightgreen;
+}
+
+.even{
+	background-color: lightblue;
+}

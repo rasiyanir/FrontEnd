@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	function chk(){
+		for(i = 0; i < document.f1.rad.length;i++){
+			if(document.f1.rad[i].checked == true){
+				val = document.f1.rad[i].value;
+			}
+			
+		}
+		alert(val);
+		//alert("the text is \n" +document.f1.webs.options[ind].text);
+	}
+	
+	function verify(){
+		if(val == "1000.00"){
+			alert("Correct");
+		}
+		else{
+			alert("Incorrect");
+		}
+	}
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="f1" style="text-align: center">
+	<h4 style="color: green">QUESTIONS</h4>
+	<p style="color: brown"> What is the Minimum balance for a Salary Account in Infy Bank?</p>
+		 <input type="radio" name="rad" value="1000.00" onClick="chk()"> 1000.00
+		 <input type="radio" name="rad" value="0.00" onClick="chk()" checked> 0.00
+		 <input type="radio" name="rad" value="100.00" onClick="chk()"> 100.00
+		 <input type="radio" name="rad" value="NOT ANSWERED" onClick="chk()"> NOT ANSWERED <br><br>
+		 <input type="button" name="but" value="Submit" onClick="verify()">
+	</form>
+</body>
+</html>

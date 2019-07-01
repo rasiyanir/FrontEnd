@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	function vali(){
+		emp = parseInt(document.f1.empno.value);
+		if(isEmpty(emp)){
+			alert("abc");
+			return false;
+		}
+	}
+	
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="f1">
+		Employee Number : <input type="text" name="empno"><br><br>
+		<input type="submit" name="Submit" value="Submit" onClick="vali()">
+	</form>
+</body>
+</html>

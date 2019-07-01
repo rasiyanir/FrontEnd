@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	function addNum(){
+		n1 = parseInt(document.form1.num1.value);
+		//document.write(n1);
+		if(isNaN(n1)){
+			alert("Please enter a number!");
+			return false;
+		}
+		n2 = parseInt(document.form1.num2.value);
+		//document.write(n2);
+		if(isNaN(n2)){
+			alert("Please enter a number!");
+			return false;
+		}
+		sum = (n1 + n2);
+		document.form1.res.value = sum;
+	}
+	
+	function mulNum(){
+		n1 = parseInt(document.form1.num1.value);
+		//document.write(n1);
+		if(isNaN(n1)){
+			alert("Please enter a number!");
+			return false;
+		}
+		n2 = parseInt(document.form1.num2.value);
+		//document.write(n2);
+		if(isNaN(n2)){
+			alert("Please enter a number!");
+			return false;
+		}
+		mul = (n1 * n2);
+		document.form1.res.value = mul;
+	}
+	
+	function divNum(){
+		n1 = parseInt(document.form1.num1.value);
+		//document.write(n1);
+		if(isNaN(n1)){
+			alert("Please enter a number!");
+			return false;
+		}
+		n2 = parseInt(document.form1.num2.value);
+		//document.write(n2);
+		if(isNaN(n2)){
+			alert("Please enter a number!");
+			return false;
+		}
+		div = (n1 / n2);
+		document.form1.res.value = div;
+	}
+	
+	function subNum(){
+		n1 = parseInt(document.form1.num1.value);
+		//document.write(n1);
+		if(isNaN(n1)){
+			alert("Please enter a number!");
+			return false;
+		}
+		n2 = parseInt(document.form1.num2.value);
+		//document.write(n2);
+		if(isNaN(n2)){
+			alert("Please enter a number!");
+			return false;
+		}
+		sub = (n1 - n2);
+		document.form1.res.value = sub;
+	}
+
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="form1" >
+		Num1<input type="text" name="num1"><br><br>
+		Num2<input type="text" name="num2"><br><br>
+		Result<input type="text" name="res"><br><br>
+	<input type="button" name="add" value=" Add "onClick="addNum()">
+	<input type="button" name="mul" value=" Multiply "onClick="mulNum()">
+	<input type="button" name="div" value=" Divide "onClick="divNum()">
+	<input type="button" name="sub" value=" Subtract "onClick="subNum()">
+	</form>
+	
+</body>
+</html>

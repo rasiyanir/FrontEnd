@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	function vali(){
+		if(document.f1.user.value.length < 8 || document.f1.psw.value.length < 8){
+			//alert(val1);
+			alert("Enter minimum 8 character");
+		}
+		
+	}
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="f1">
+		UserName : <input type="text" name="user"  maxlength="15"><br><br>
+		Password : <input type="password" name="psw" maxlength="15">
+		<input type="submit" value="Submit" onClick="vali()">
+	</form>
+</body>
+</html>

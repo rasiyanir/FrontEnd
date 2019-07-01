@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body bgcolor="cyan">
+	<form>
+		<center><font size="6" color="blue"><b>Apply Form</b></font></center>
+		<table border="0" width="80%" bordercolor="blue">
+			<tr>
+				<td>Name</td><td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>Sex</td>
+				<td><input type="radio" name="sexoptions" value="male" checked> male
+					<input type="radio" name="sexoptions" value="female"> female
+				</td>
+			</tr>
+			<tr>
+				<td>Interested In</td>
+				<td><input type="checkbox" name="interestoptions" value="currentaccount" checked> Current Account
+					<input type="checkbox" name="interestoptions" value="debitcard" > Debit Card
+					<input type="checkbox" name="interestoptions" value="creditcard" > Credit Card
+					<input type="checkbox" name="interestoptions" value="demataccount" > Demat Account
+					<input type="checkbox" name="interestoptions" value="insuranceplan" > Insurance Plans
+				</td>
+			</tr>
+			<tr>
+				<td>Email</td><td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>Date Of Birth</td>
+				<td><select name="Date">
+						<option value="1-5"> 1-5
+						<option value="6-10" selected> 6-10
+						<option value="11-15"> 11-15
+						<option value="16-20"> 16-20
+						<option value="21-25"> 21-25
+						<option value="26-30"> 26-30
+					</select>
+					<select name="Month">
+						<option value="Jan"> Jan
+						<option value="Feb"> Feb
+						<option value="Mar"> Mar
+						<option value="Apr"> Apr
+						<option value="May"> May
+						<option value="Jun"> Jun
+						<option value="July"> July
+						<option value="Aug"> Aug
+						<option value="Sep"> Sep
+						<option value="Oct"> Oct
+						<option value="Nov"> Nov
+						<option value="Dec"> Dec
+					</select>
+					<select name="Month">
+						<option value="1990"> 1990
+						<option value="1991"> 1991
+						<option value="1992"> 1992
+						<option value="1993"> 1993
+						<option value="1994"> 1994
+						<option value="1995"> 1995
+						<option value="1996"> 1996
+						<option value="1997"> 1997
+						<option value="1998"> 1998
+						<option value="1999"> 1999
+						<option value="2000"> 2000
+						<option value="2001"> 2001
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Attach Id Proof</td><td><input type="file" name="myfile" value="Browse"></td>
+			</tr>
+			<tr>
+				<td>Comments</td><td><textarea rows="7" cols="30"></textarea></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="sub" value="Submit"> <input type="reset" name="res" value="Reset"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

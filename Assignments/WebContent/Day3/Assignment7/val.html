@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function verify(){
+	
+	custVal = document.f1.name.value;
+	datVal = document.f1.date.value;
+	emVal = document.f1.email.value;
+
+	
+	if(custVal.length <=0  && datVal.length <= 0 && emVal.length <= 0){
+		alert("All fields are mandatory!!!");
+	}
+	else if(custVal.length < 3){
+		alert("Name cannot be less than 3 char");
+	}
+	
+}
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body bgcolor="cyan">
+	<form name="f1">
+		<h2 style="color: maroon;text-align: center"> INFY BANK</h2>
+		<h3 style="color: maroon;text-align: center">Customer Registration Form</h3>
+		<div class="details" style="margin-left: 30%">
+			<table style="background-color:yellow;">
+				<tr>
+					<td>Customer Name <span style="color: red">(*)</span></td>
+					<td><input type="text" name="name"></td>
+				</tr>
+				<tr>
+					<td>Customer Date of Birth <span style="color: red">(*)</span></td>
+					<td><input type="date" name="date"></td>
+				</tr>
+				<tr>
+					<td>Customer Email <span style="color: red">(*)</span></td>
+					<td><input type="email" name="email"></td>
+				</tr>
+				<tr>
+					<td><span style="color: red">(*)Mandatory</span></td>
+					<td align="center"><input type="submit" name="sub" value=" Submit " onClick="verify()"></td>
+				</tr>
+			</table>
+			 
+			 
+			 
+			 
+		</div>
+	</form>
+</body>
+</html>
